@@ -1,0 +1,47 @@
+MACRO
+
+INCR
+
+mover areg one
+
+mover breg two
+
+add areg breg
+
+MEND
+
+MACRO
+
+ONL
+
+mover creg one
+
+mover dreg two
+
+div creg dreg
+
+MEND
+
+MACRO
+
+INCR1
+
+mover areg one
+
+mover breg two
+
+mult areg breg
+
+MEND
+
+START 200
+
+MOVER AREG FIRST
+
+ADD AREG SECOND
+
+MOVEM AREG RESULT
+
+INCR
+
+PRINT RESULT
